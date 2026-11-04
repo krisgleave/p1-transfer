@@ -1,0 +1,8 @@
+build/
+.DS_Store
+*.dSYM/
+.swiftpm/
+work/
+*.partial
+__pycache__/
+*.pyc
