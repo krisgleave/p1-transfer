@@ -8,7 +8,7 @@ Created by **Kris Gleave — KrisTalksTech** for the FPV community.
 
 P1 Transfer is a small, open-source macOS app that copies video recordings and accompanying `.srt` files from a P1 receiver over USB. The downloadable app includes its MTP tools: you do **not** need Homebrew, Xcode, or separately installed drivers to use it.
 
-[Download the latest release](https://github.com/krisgleave/p1-transfer/releases/latest) · [Report a problem](https://github.com/krisgleave/p1-transfer/issues) · [Build from source](docs/BUILDING.md)
+[Download the latest release](https://github.com/krisgleave/p1-transfer/releases/latest) · [Subscribe on YouTube](https://www.youtube.com/@kristalkstech) · [Support the project](SUPPORT.md) · [Report a problem](https://github.com/krisgleave/p1-transfer/issues) · [Build from source](docs/BUILDING.md)
 
 ## Requirements
 
@@ -72,7 +72,21 @@ See [architecture and limitations](docs/ARCHITECTURE.md) and [contributing](CONT
 
 ## Support the project
 
-P1 Transfer is free and open source. Community testing, useful bug reports, documentation and code contributions are welcome. Optional donation links will be added here once the maintainer has configured them; donations are not required to use the app.
+P1 Transfer is free and open source, made by **Kris Gleave (KrisTalksTech)** for the FPV community. If it has helped you get your recordings off your P1, thank you for giving it a go.
+
+### The best way to support: subscribe on YouTube
+
+**[Head over to KrisTalksTech on YouTube and subscribe](https://www.youtube.com/@kristalkstech).** I make FPV drone content, gear reviews and flying videos. Subscribing, watching a video or sharing the channel is the biggest way you can support what I do—and it costs nothing.
+
+### Optional PayPal support
+
+If you'd also like to leave a tip, you can send one through PayPal to **`kris@krisgleave.com`**. Open PayPal, choose to send money, and enter that address as the recipient. Please check the recipient details before confirming any payment.
+
+**Donations are completely optional.** The app is free to use whether or not you donate or subscribe.
+
+You can also help by starring this repository, sharing it with other P1 pilots, reporting bugs or contributing improvements. Every bit of support is appreciated.
+
+[More ways to support KrisTalksTech](SUPPORT.md)
 
 ## Credits and licence
 
