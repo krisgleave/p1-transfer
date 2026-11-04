@@ -16,8 +16,6 @@ If you prefer to enter the recipient manually, my PayPal email is:
 
 **`kris@krisgleave.com`**
 
-Use the PayPal.Me link above, or enter the email address in PayPal. Check the recipient details before confirming a payment. There is no required amount.
-
 **There is no obligation to donate or subscribe. P1 Transfer is free and open source, with no paid features or subscription required to use it.**
 
 ## Other ways to help
