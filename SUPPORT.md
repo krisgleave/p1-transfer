@@ -10,13 +10,13 @@ I make FPV drone content, gear reviews and flying videos. If you'd like to suppo
 
 ## Leave an optional tip through PayPal
 
-If the app has saved you some time and you'd like to leave a tip, my PayPal recipient email is:
+If the app has saved you some time and you'd like to leave a tip, **[Send an optional tip through PayPal.Me](https://paypal.me/krisgleave).**
+
+If you prefer to enter the recipient manually, my PayPal email is:
 
 **`kris@krisgleave.com`**
 
-Open PayPal, choose to send money, and enter that email address. Check the recipient details before confirming a payment. There is no required amount.
-
-A direct PayPal donation-page link is not currently configured, so the recipient email is provided instead.
+Use the PayPal.Me link above, or enter the email address in PayPal. Check the recipient details before confirming a payment. There is no required amount.
 
 **There is no obligation to donate or subscribe. P1 Transfer is free and open source, with no paid features or subscription required to use it.**
 

@@ -80,7 +80,7 @@ P1 Transfer is free and open source, made by **Kris Gleave (KrisTalksTech)** for
 
 ### Optional PayPal support
 
-If you'd also like to leave a tip, you can send one through PayPal to **`kris@krisgleave.com`**. Open PayPal, choose to send money, and enter that address as the recipient. Please check the recipient details before confirming any payment.
+If you'd also like to leave a tip, you can **[support me through PayPal](https://paypal.me/krisgleave)**. My PayPal recipient email is `kris@krisgleave.com` if you prefer to enter it manually. Please check the recipient details before confirming any payment.
 
 **Donations are completely optional.** The app is free to use whether or not you donate or subscribe.
 
