@@ -20,7 +20,7 @@ python3 scripts/build.py
 
 The script checks dependency versions and source-archive hashes, compiles the GUI, copies only the required helpers and libraries, relocates their library paths, generates the multi-resolution app icon, includes licences and source archives, signs locally, and verifies the bundle signature.
 
-Output: `build/P1-Transfer-1.8-macOS-arm64.zip` and a SHA-256 checksum file. The result is standalone and does not depend on Homebrew at runtime.
+Output: `build/P1-Transfer-1.0-macOS-arm64.zip` and a SHA-256 checksum file. The result is standalone and does not depend on Homebrew at runtime.
 
 If Homebrew has upgraded the libraries beyond the pinned versions, update dependency source archives, hashes and notices together rather than bundling new binaries with mismatched source. You can also reuse bundled dependencies from a trusted existing release:
 
