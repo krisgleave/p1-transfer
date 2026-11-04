@@ -2,7 +2,7 @@
 
 The Swift GUI and original project assets are MIT licensed, copyright 2026 Kris Gleave (KrisTalksTech). These terms do not replace the licences of third-party components.
 
-| Component | Version in release 1.8 | Licence | Project |
+| Component | Version in release 1.0 | Licence | Project |
 |---|---|---|---|
 | libmtp and its mtp-files / mtp-connect tools | 1.1.23 | LGPL-2.1-or-later | https://github.com/libmtp/libmtp |
 | libusb | 1.0.30 | LGPL-2.1-or-later | https://github.com/libusb/libusb |

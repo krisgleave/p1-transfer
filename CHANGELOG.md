@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.8 — 2026-11-04
+## 1.0 — 2026-11-04
 
 - Full-bleed blue icon artwork to avoid an inset tile appearance on current macOS.
 - Standalone Apple Silicon package with libmtp and libusb included.

@@ -1,4 +1,4 @@
-# P1 Transfer 1.8 — first community release
+# P1 Transfer 1.0 — first community release
 
 A free, standalone Mac utility for downloading BETAFPV P1 recordings and SRT sidecar files.
 
