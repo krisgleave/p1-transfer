@@ -1,5 +1,16 @@
 import Cocoa
 
+final class PrimaryDownloadButton: NSButton {
+  override func draw(_ dirtyRect: NSRect) {
+    let background: NSColor = isEnabled ? (isHighlighted ? NSColor.systemBlue.blended(withFraction: 0.16, of: .black)! : .systemBlue) : .controlColor
+    background.setFill()
+    NSBezierPath(roundedRect: bounds.insetBy(dx: 0.5, dy: 0.5), xRadius: 6, yRadius: 6).fill()
+    let attributes: [NSAttributedString.Key: Any] = [.font: font ?? NSFont.systemFont(ofSize: 13), .foregroundColor: isEnabled ? NSColor.white : NSColor.disabledControlTextColor]
+    let size = (title as NSString).size(withAttributes: attributes)
+    (title as NSString).draw(at: NSPoint(x: (bounds.width-size.width)/2, y: (bounds.height-size.height)/2), withAttributes: attributes)
+  }
+}
+
 struct Recording {
   let id: String
   let name: String
@@ -16,7 +27,7 @@ final class App: NSObject, NSApplicationDelegate, NSTableViewDataSource, NSTable
     labelWithString: "Connect and power on your P1. Keep other MTP apps closed.")
   let table = NSTableView()
   let refresh = NSButton(title: "Refresh", target: nil, action: nil)
-  let download = NSButton(title: "Download selected…", target: nil, action: nil)
+  let download = PrimaryDownloadButton(title: "Download selected…", target: nil, action: nil)
   let transferBar = NSProgressIndicator()
   let transferInfo = NSTextField(labelWithString: "")
   let progress = NSProgressIndicator()
@@ -39,19 +50,20 @@ final class App: NSObject, NSApplicationDelegate, NSTableViewDataSource, NSTable
       keyEquivalent: "q")
     item.submenu = submenu
     NSApp.mainMenu = menu
-    window.title = "P1 Transfer"
+    window.title = "P1 Transfer v1.1 — by KrisTalksTech"
+    window.minSize = NSSize(width: 740, height: 490)
     window.center()
     let root = NSStackView()
     root.orientation = .vertical
     root.spacing = 16
-    root.edgeInsets = NSEdgeInsets(top: 22, left: 22, bottom: 22, right: 22)
+    root.edgeInsets = NSEdgeInsetsZero
     root.translatesAutoresizingMaskIntoConstraints = false
     window.contentView!.addSubview(root)
     NSLayoutConstraint.activate([
-      root.leadingAnchor.constraint(equalTo: window.contentView!.leadingAnchor),
-      root.trailingAnchor.constraint(equalTo: window.contentView!.trailingAnchor),
-      root.topAnchor.constraint(equalTo: window.contentView!.topAnchor),
-      root.bottomAnchor.constraint(equalTo: window.contentView!.bottomAnchor),
+      root.leadingAnchor.constraint(equalTo: window.contentView!.leadingAnchor, constant: 20),
+      root.trailingAnchor.constraint(equalTo: window.contentView!.trailingAnchor, constant: -20),
+      root.topAnchor.constraint(equalTo: window.contentView!.topAnchor, constant: 18),
+      root.bottomAnchor.constraint(equalTo: window.contentView!.bottomAnchor, constant: -18),
     ])
     let heading = NSTextField(labelWithString: "Your P1 recordings")
     heading.font = .systemFont(ofSize: 24, weight: .semibold)
@@ -94,6 +106,9 @@ final class App: NSObject, NSApplicationDelegate, NSTableViewDataSource, NSTable
     refresh.action = #selector(scan)
     download.target = self
     download.action = #selector(copySelected)
+    download.bezelStyle = .rounded
+    download.bezelColor = .systemBlue
+    download.keyEquivalent = "\r"
     download.isEnabled = false
     progress.style = .spinning
     progress.controlSize = .small
