@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1 — 2026-11-06
+
+- Consistent outer margins around the progress, file list and action controls.
+- Blue primary download button when files are selected.
+- Window title: P1 Transfer v1.1 — by KrisTalksTech.
+- Transfer behaviour and bundled MTP tools remain unchanged.
+
+
 ## 1.0 — 2026-11-04
 
 - Full-bleed blue icon artwork to avoid an inset tile appearance on current macOS.

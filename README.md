@@ -10,9 +10,15 @@ P1 Transfer is a small, open-source macOS app that copies video recordings and a
 
 [Download the latest release](https://github.com/krisgleave/p1-transfer/releases/latest) · [Subscribe on YouTube](https://www.youtube.com/@kristalkstech) · [Support the project](SUPPORT.md) · [Report a problem](https://github.com/krisgleave/p1-transfer/issues) · [Build from source](docs/BUILDING.md)
 
+## Screenshot
+
+![P1 Transfer v1.1 with updated spacing and title bar](assets/screenshot-v1.1.png)
+
+The download button turns blue when files are selected and downloading is available.
+
 ## Requirements
 
-| | Current downloadable build (1.0) |
+| | Current downloadable build (1.1) |
 |---|---|
 | Mac | Apple Silicon: M1 or newer |
 | macOS | 27.0 or newer |

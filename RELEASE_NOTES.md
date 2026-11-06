@@ -1,3 +1,11 @@
+# P1 Transfer 1.1
+
+- Consistent outer margins around the progress, file list and action buttons.
+- Blue download button when files are selected; disabled when nothing can be downloaded.
+- Title bar: P1 Transfer v1.1 — by KrisTalksTech.
+
+The standalone dependencies, copy-only behaviour and file naming are unchanged. Apple Silicon, macOS 27.0 or later. Locally signed, not Apple-notarized.
+
 # P1 Transfer 1.0 — first community release
 
 A free, standalone Mac utility for downloading BETAFPV P1 recordings and SRT sidecar files.
