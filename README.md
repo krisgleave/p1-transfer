@@ -2,6 +2,19 @@
 
 # P1 Transfer for Mac
 
+<!-- KRIS-SUPPORT-START -->
+
+> ☕ **Support Free FPV Software Development**
+>
+> All my applications are free and open source. If you find
+> them useful, optional contributions help support continued
+> development and improvements.
+>
+> **[☕ Buy Me a Coffee](https://buymeacoffee.com/krisgleave)**
+
+<!-- KRIS-SUPPORT-END -->
+
+
 **Get recordings off your BETAFPV P1 without Windows, Terminal commands, or a subscription.**
 
 Created by **Kris Gleave — KrisTalksTech** for the FPV community.
