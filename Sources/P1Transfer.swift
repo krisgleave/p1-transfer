@@ -26,6 +26,7 @@ final class App: NSObject, NSApplicationDelegate, NSTableViewDataSource, NSTable
   let status = NSTextField(
     labelWithString: "Connect and power on your P1. Keep other MTP apps closed.")
   let table = NSTableView()
+  let closeButton = PrimaryDownloadButton(title: "Close", target: nil, action: nil)
   let refresh = NSButton(title: "Refresh", target: nil, action: nil)
   let download = PrimaryDownloadButton(title: "Download selected…", target: nil, action: nil)
   let transferBar = NSProgressIndicator()
@@ -50,7 +51,7 @@ final class App: NSObject, NSApplicationDelegate, NSTableViewDataSource, NSTable
       keyEquivalent: "q")
     item.submenu = submenu
     NSApp.mainMenu = menu
-    window.title = "P1 Transfer v1.1 — by KrisTalksTech"
+    window.title = "P1 Transfer"
     window.minSize = NSSize(width: 740, height: 490)
     window.center()
     let root = NSStackView()
@@ -117,6 +118,8 @@ final class App: NSObject, NSApplicationDelegate, NSTableViewDataSource, NSTable
     selectAll.action = #selector(checkAll)
     clearSelection.target = self
     clearSelection.action = #selector(uncheckAll)
+    closeButton.target = window
+    closeButton.action = #selector(NSWindow.performClose(_:))
     row.addArrangedSubview(refresh)
     row.addArrangedSubview(selectAll)
     row.addArrangedSubview(clearSelection)
@@ -124,6 +127,8 @@ final class App: NSObject, NSApplicationDelegate, NSTableViewDataSource, NSTable
     let spacer = NSView()
     row.addArrangedSubview(spacer)
     row.addArrangedSubview(download)
+    row.addArrangedSubview(closeButton)
+    closeButton.widthAnchor.constraint(equalToConstant: 90).isActive = true
     root.addArrangedSubview(row)
     row.widthAnchor.constraint(equalTo: root.widthAnchor).isActive = true
     let foot = NSTextField(
