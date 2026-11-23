@@ -12,9 +12,9 @@ P1 Transfer is a small, open-source macOS app that copies video recordings and a
 
 ## Screenshot
 
-![P1 Transfer v1.1 with updated spacing and title bar](assets/screenshot-v1.1.png)
+![P1 Transfer v1.1 with blue Close button](assets/screenshot-v1.1.png)
 
-The download button turns blue when files are selected and downloading is available.
+The download button turns blue when files are selected. The blue Close button remains available at the bottom-right.
 
 ## Requirements
 
@@ -30,8 +30,8 @@ The app was tested during development on an M4 Pro MacBook Pro with a P1 reporti
 
 ## Download and use
 
-1. Download the app ZIP from **Releases**, rather than GitHub's **Code → Download ZIP** source archive.
-2. Unzip it and move **P1 Transfer** to Applications, if desired.
+1. Download the `.pkg` installer from **Releases** and install **P1 Transfer** into Applications. Alternatively, download the standalone ZIP and copy the app into Applications.
+2. Open **P1 Transfer** from Applications. See [installation instructions](docs/INSTALLATION.md).
 3. Quit other MTP apps, including OpenMTP, MacDroid and Android File Transfer.
 4. Connect and power on the P1, then open P1 Transfer. It scans on launch and watches for a connection until one succeeds.
 5. Tick the files you want, or use **Select All** and **Clear**.

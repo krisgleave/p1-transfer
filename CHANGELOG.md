@@ -1,12 +1,13 @@
 # Changelog
 
-## 1.1 — 2026-11-06
+## 1.1 — updated 2026-11-23
 
-- Consistent outer margins around the progress, file list and action controls.
-- Blue primary download button when files are selected.
-- Window title: P1 Transfer v1.1 — by KrisTalksTech.
-- Transfer behaviour and bundled MTP tools remain unchanged.
-
+- Added a native macOS `.pkg` installer.
+- Simplified window title to P1 Transfer.
+- Added a blue Close button at the bottom-right.
+- Maintained the unversioned P1 Transfer.app name.
+- Updated screenshot and installation instructions.
+- Retained existing transfer functionality and bundled MTP dependencies.
 
 ## 1.0 — 2026-11-04
 

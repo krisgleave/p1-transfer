@@ -1,29 +1,38 @@
-# P1 Transfer 1.1
+# P1 Transfer v1.1
 
-- Consistent outer margins around the progress, file list and action buttons.
-- Blue download button when files are selected; disabled when nothing can be downloaded.
-- Title bar: P1 Transfer v1.1 — by KrisTalksTech.
+P1 Transfer is a free macOS utility for copying BETAFPV P1 recordings and SRT files without Windows or separate MTP software.
 
-The standalone dependencies, copy-only behaviour and file naming are unchanged. Apple Silicon, macOS 27.0 or later. Locally signed, not Apple-notarized.
+## Updated interface
 
-# P1 Transfer 1.0 — first community release
+- Simplified window title: **P1 Transfer**
+- Blue **Close** button positioned at the bottom-right
+- Consistent spacing around the interface
+- Blue download button when recordings are selected
+- Standard application name: **P1 Transfer.app**
 
-A free, standalone Mac utility for downloading BETAFPV P1 recordings and SRT sidecar files.
+## Installation
 
-Created by **Kris Gleave (KrisTalksTech)**, with implementation assistance from OpenAI Codex.
+Download the `.pkg` installer from [GitHub Releases](https://github.com/krisgleave/p1-transfer/releases/tag/v1.1) and follow the macOS installer.
 
-## Included
+A standalone ZIP is also available.
 
-- Native checkbox list with Select All and Clear.
-- Batch download percentage, average speed and estimated time remaining.
-- Timestamped destination folders using `P1-recordings-yyyyMMdd-HHmmss`.
-- Copies only; original recordings stay on the P1.
-- Bundled libmtp and libusb, with their licences and corresponding source archives.
+Requires Apple Silicon and macOS 27.0 or later. The app bundles libmtp and libusb, so no additional drivers or Homebrew installation are needed.
 
-## Requirements and status
+The app is ad-hoc signed and not Apple notarised. See [installation instructions](docs/INSTALLATION.md) for macOS security guidance.
 
-**Apple Silicon, macOS 27.0 or newer.** No Homebrew, Xcode, separate drivers or Terminal commands required for end users. Ad-hoc signed, not Apple Developer ID signed or notarised; macOS may require explicit per-app approval.
+## Features
 
-Tested during development on an M4 Pro MacBook Pro and a P1 reporting BETAFPV P1 Rev A. Community feedback on other P1 variants is welcome. This is an independent utility, not an official BETAFPV product.
+- Native macOS interface
+- Select individual recordings or all files
+- Download MP4 recordings and SRT sidecar files
+- Progress reporting and estimated remaining time
+- Timestamped download folders
+- Copy-only transfers; originals remain on the P1
 
-Close other MTP apps before connecting. The current transfer timeout is 10 minutes per file. See README for limits and troubleshooting.
+## Screenshot
+
+![P1 Transfer v1.1](assets/screenshot-v1.1.png)
+
+## Previous release
+
+Version 1.0 introduced standalone P1 recording downloads, bundled dependencies and the original macOS interface.

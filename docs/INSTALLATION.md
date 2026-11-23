@@ -1,19 +1,52 @@
-# Installation
+# Installing P1 Transfer
 
-## Packaged app
+## Requirements
 
-Download the app ZIP from GitHub Releases, extract it, and open the `.app`. You may move it into Applications. No Homebrew, libmtp installation, Xcode or Terminal commands are needed for the packaged app.
+- Apple Silicon Mac (M1 or newer)
+- macOS 27.0 or later
+- BETAFPV P1 receiver and data-capable USB cable
 
-The current release targets Apple Silicon and macOS 27.0 or newer. It is locally/ad-hoc signed, not signed with an Apple Developer ID and not notarised.
+The application includes libmtp and libusb. You do not need Homebrew, Xcode, or additional drivers.
 
-macOS can display an unidentified-developer warning. Only proceed if you trust the source and have verified that you downloaded the intended release. Apple describes its per-app approval process at https://support.apple.com/102445. Do not disable Gatekeeper or system-wide protections. If your Mac is managed by an organisation, its policy may prevent opening the app.
+## Recommended: macOS installer (.pkg)
 
-## Receiver
+1. Open the [P1 Transfer v1.1 release](https://github.com/krisgleave/p1-transfer/releases/tag/v1.1).
+2. Download `P1-Transfer-1.1-arm64.pkg`.
+3. Quit any running copy of P1 Transfer.
+4. Double-click the downloaded package and follow the installation instructions.
+5. Open **P1 Transfer** from Applications.
+6. Connect and power on your P1, then click Refresh if necessary.
 
-Connect the receiver using a data-capable USB cable and power it as required by its hardware manual. Quit competing MTP apps before opening P1 Transfer. The app does not mount a disk in Finder; use its checkbox list and Download button.
+The installed application is always named **P1 Transfer.app**, without a version number in its name.
 
-After the first successful connection, click Refresh manually when swapping or reconnecting a receiver.
+## Alternative: ZIP download
 
-## Updates
+Download `P1-Transfer-1.1-macOS-arm64.zip`, extract it and move **P1 Transfer.app** into Applications.
 
-Finish any current download, quit the old version and replace it with the new app. Do not replace an app while it is copying files. Destination files and recordings on the P1 are not removed by replacing the app.
+If you have an older application named `P1 Transfer v1.1.app`, remove that older copy after confirming the new version works.
+
+## macOS security warning
+
+P1 Transfer is ad-hoc signed but is not Apple Developer ID signed or notarised. macOS may prevent it from opening automatically.
+
+Only proceed if you trust the downloaded application. Use **System Settings > Privacy & Security > Open Anyway** when macOS offers that option, following [Apple's guidance](https://support.apple.com/102445).
+
+Do not disable Gatekeeper or other system-wide security protections.
+
+## Transferring recordings
+
+1. Quit competing MTP applications such as OpenMTP, MacDroid or Android File Transfer.
+2. Connect and power on the P1 using a data-capable USB cable.
+3. Open P1 Transfer and select your recordings.
+4. Click **Download selected…** and choose a destination.
+5. Use **Refresh** after reconnecting the receiver.
+
+Downloads are copied into timestamped folders. Originals remain on the receiver.
+
+The blue **Close** button at the bottom-right closes the application.
+
+## Updating
+
+Finish any active downloads before updating. Quit the application, then install the new package or replace the existing app.
+
+Your downloaded recordings are not deleted by updating the application.
