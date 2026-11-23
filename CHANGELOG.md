@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2 — 2026-11-23
+
+- Native macOS PKG installer.
+- Simplified application title.
+- Blue Close button at the bottom-right.
+- Improved button spacing and layout.
+- Updated application screenshot.
+- Updated installation instructions.
+- Bundled MTP dependencies retained.
+
+
 ## 1.1 — updated 2026-11-23
 
 - Added a native macOS `.pkg` installer.

@@ -1,4 +1,4 @@
-# P1 Transfer v1.1
+# P1 Transfer v1.2
 
 P1 Transfer is a free macOS utility for copying BETAFPV P1 recordings and SRT files without Windows or separate MTP software.
 

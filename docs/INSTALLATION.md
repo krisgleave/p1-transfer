@@ -11,7 +11,7 @@ The application includes libmtp and libusb. You do not need Homebrew, Xcode, or 
 ## Recommended: macOS installer (.pkg)
 
 1. Open the [P1 Transfer v1.1 release](https://github.com/krisgleave/p1-transfer/releases/tag/v1.1).
-2. Download `P1-Transfer-1.1-arm64.pkg`.
+2. Download `P1-Transfer-1.2-arm64.pkg`.
 3. Quit any running copy of P1 Transfer.
 4. Double-click the downloaded package and follow the installation instructions.
 5. Open **P1 Transfer** from Applications.
@@ -21,7 +21,7 @@ The installed application is always named **P1 Transfer.app**, without a version
 
 ## Alternative: ZIP download
 
-Download `P1-Transfer-1.1-macOS-arm64.zip`, extract it and move **P1 Transfer.app** into Applications.
+Download `P1-Transfer-1.2-macOS-arm64.zip`, extract it and move **P1 Transfer.app** into Applications.
 
 If you have an older application named `P1 Transfer v1.1.app`, remove that older copy after confirming the new version works.
 
